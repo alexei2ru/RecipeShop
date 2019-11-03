@@ -46,7 +46,7 @@ pipeline {
                 milestone(1)
                  kubernetesDeploy(
                     kubeconfigId: 'kube_config',
-                    configs: recipe-shop.yml',
+                    configs: 'recipe-shop.yml',
                     enableConfigSubstitution: true
                   )
             }
